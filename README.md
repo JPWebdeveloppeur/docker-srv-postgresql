@@ -46,7 +46,7 @@ docker-compose up -d ou docker-compose up --build
 ```
 ➔ Lancer l'installation de symfony : 
 ```
-   composer create-project symfony/website-skeleton:"^4.4" my_project_name
+   composer create-project symfony/website-skeleton:"^4.4" project
 ```
 
 ➔ Voici l'url pour l'applicationweb :
@@ -75,6 +75,7 @@ docker-compose up -d ou docker-compose up --build
     - /docker/php # Contient le dockerfile
     - /docker/php/vhosts # Contient le vhost.conf pour la config apache
 - /docker-compose.yml # Orchestrer vos conteneurs
+- /project # contiendra votre application symfony 
 ```
 
 # Memento Docker
