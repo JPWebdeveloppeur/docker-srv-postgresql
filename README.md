@@ -25,17 +25,17 @@ Outre l'image de base Apache PHP 7.4.16, il comprend également les modules suiv
 
 ### Comment ça marche ?
 
-* Pendant que vous développez votre application, vous utilisez `docker-compose` qui utilise la base` Dockerfile` et monte votre dossier local `/project` à l'intérieur. 
+* Pendant que vous développez votre application, vous utilisez `docker-compose` qui utilise la base` Dockerfile` et monte votre dossier local `/project` à l'intérieur se trouve votre application. 
 
 * Cela signifie que vous pouvez développer votre application sans redémarrer le conteneur. 
 
-* Le `docker-compose` démarre également une base de données psql et le conteneur pgadmin pour une administration facile.
+* Le `docker-compose` démarre également une base de données postegre et le conteneur pgadmin pour une administration facile.
   
-* NodeJs, npm, yarn, vim sont emnbarqué au sein du conteneur php. 
+* Composer, NodeJs, npm, yarn, vim et zsh sont embarqué au sein du conteneur php. 
 
 # Démarrage de l'environnement de développement avec PHP, MySQL et phpMyAdmin 
 
-➔ Ouvrez un terminale type bash et placez-vous dans le répertoire ou se trouve le docker-compose puis saisir :
+➔ Ouvrez un terminal type bash et placez-vous dans le répertoire ou se trouve le docker-compose puis saisir :
 
 ```
 docker-compose up -d ou docker-compose up --build
@@ -76,9 +76,6 @@ docker-compose up -d ou docker-compose up --build
     - /docker/php/vhosts # Contient le vhost.conf pour la config apache
 - /docker-compose.yml # Orchestrer vos conteneurs
 ```
-# Composer
-
-➔ Il y a un fichier Composer vide à la racine. Vous pouvez ajouter vos dépendances de projet ici.
 
 # Memento Docker
 ➔ https://labo-tech.fr/base-de-connaissance/quelles-sont-les-commandes-de-base-de-docker/
