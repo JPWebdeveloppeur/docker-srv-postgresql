@@ -58,9 +58,9 @@ docker-compose up -d ou docker-compose up --build
         * http://localhost:8080/
 
 
-### Identifiants MySQL
+### Identifiants PostgreSql
 
-➔ Une base de données MySQL vide par défaut est configurée que vous pouvez utiliser dans votre application :
+➔ Une base de données PostgreSql vide par défaut est configurée que vous pouvez utiliser dans votre application :
 
 * User: `docker_db`
 * Password: `docker_db`
