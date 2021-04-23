@@ -49,7 +49,7 @@ docker-compose up -d ou docker-compose up --build
    composer create-project symfony/website-skeleton:"^4.4" project
 ```
 
-➔ Voici l'url pour l'applicationweb :
+➔ Voici l'url pour l'application :
 
     ► Application Web : 
         * http://localhost:8741/
