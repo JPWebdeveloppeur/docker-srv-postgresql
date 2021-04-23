@@ -1,6 +1,6 @@
 # Docker environnement Php 7.4.16-apache for Symfony 4.4
 
-Il s'agit d'une image Docker qui vous permet d'avoir un environnement de développement local ( Php 7.4.16, Apache 2.4.38, PostgreSql 11.11, Pgadmin4).
+Il s'agit d'une image Docker qui vous permet d'avoir un environnement de développement local ( Php 7.4.16, Apache 2.4.38, PostgreSql 11.11, Pgadmin 4).
 
 Outre l'image de base Apache PHP 7.4.16, il comprend également les modules suivants:
 ```
@@ -33,7 +33,7 @@ Outre l'image de base Apache PHP 7.4.16, il comprend également les modules suiv
   
 * Composer, NodeJs, npm, yarn, vim et zsh sont embarqué au sein du conteneur php. 
 
-# Démarrage de l'environnement de développement avec PHP, MySQL et phpMyAdmin 
+# Démarrage de l'environnement de développement avec PHP, PostgreSql et Pgadmin
 
 ➔ Ouvrez un terminal type bash et placez-vous dans le répertoire ou se trouve le docker-compose puis saisir :
 
