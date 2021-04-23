@@ -62,10 +62,14 @@ docker-compose up -d ou docker-compose up --build
 
 ➔ Une base de données PostgreSql vide par défaut est configurée que vous pouvez utiliser dans votre application :
 
-* User: `docker_db`
-* Password: `docker_db`
-* Database name: `docker_db_test`
-* Database host: `db_docker`
+* POSTGRES_USER: `docker_db`
+* POSTGRES_PASSWORD: `docker_db`
+* POSTGRES_DB: `docker_db_test`
+* POSTGRES_Hote: `localhost`
+
+```
+psql --host=localhost --username=docker_db --dbname=docker_db_test
+```
 
 # Structure des dossiers
 
