@@ -2,5 +2,3 @@
 .idea/*
 docker/php/php.ini
 
-# Env
-env_file
