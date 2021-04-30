@@ -83,8 +83,7 @@ psql -U user name_db < chemin ou se trouve le backup
     - /docker/db # Permet de pouvoir au besoin stocker vos dump db
     - /docker/php # Contient le dockerfile
     - /docker/php/vhosts # Contient le vhost.conf pour la config apache
-- /docker-compose.yml # Orchestrer vos conteneurs
-- /project # contiendra votre application symfony 
+- docker-compose.yml # Orchestrer vos conteneurs 
 ```
 
 # Memento Docker
