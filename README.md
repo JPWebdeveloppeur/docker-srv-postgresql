@@ -25,7 +25,7 @@ Outre l'image de base Apache PHP 7.4.16, il comprend également les modules suiv
 
 ### Comment ça marche ?
 
-* Pendant que vous développez votre application, vous utilisez `docker-compose` qui utilise la base` Dockerfile` et monte votre dossier local `/project` à l'intérieur se trouve votre application. 
+* Pendant que vous développez votre application, vous utilisez `docker-compose` qui utilise la base `Dockerfile` et monte votre dossier local `/project` à l'intérieur se trouve votre application. 
 
 * Cela signifie que vous pouvez développer votre application sans redémarrer le conteneur. 
 
