@@ -67,11 +67,11 @@ docker-compose up -d ou docker-compose up --build
 * POSTGRES_DB: `docker_db_test`
 * POSTGRES_Hote: `localhost`
 
-➔ Connexion bdd
+* Connexion bdd
 ```
 psql --host=localhost --username=username --dbname=dbname
 ```
-➔ Restore bdd
+* Restore bdd
 ```
 psql -U user name_db < chemin ou se trouve le backup
 ```
