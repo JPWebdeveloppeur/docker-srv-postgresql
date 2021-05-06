@@ -6,7 +6,7 @@
 https://github.com/JPWebdeveloppeur/docker-environnement-srv-postgresql.git
 ```
 
-➔ Recuperer : Dans le .env de votre projet SF4 saisir :
+➔ Dans le .env de votre projet SF4 saisir :
     
 ```
 DATABASE_NOSSE_URL=pgsql://user:passwordnosse@name_instance_bdd:5432/name_database
@@ -17,16 +17,17 @@ Ici le name_instance_bdd c'est l'instance de votre container_name de votre docke
 ➔ lancer une l'invite de commande et sur votre hote docker :
 	
 ```
-cd /var/www (acceder au projet sur votre hote)
+cd /var/www (accede au projet sur votre hote)
 ```
 ```
-php bin/console doctrine:database:create (lancer la création de votre bdd)
+php bin/console doctrine:database:create (lance la création de votre bdd)
 ```
 
-➔ Lorsque nous sommes sur une remise en route les entity sont en principe déja créer donc ils vous reste juste à saisir directement
+➔ Lorsque nous sommes sur une remise en route les entity sont en principe déja créer donc ils vous reste juste à saisir
 ```
 php bin/console make:migration
 ```
+puis 
 ```
 php bin/console doctrine:migrations:migrate
 ```
