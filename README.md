@@ -21,7 +21,7 @@ Outre l'image de base Apache PHP 7.4.16, il comprend également les modules suiv
 * zip 			* zlib
 ```
 
-**Note:**  Vous pouvez s'il vous souhaitait rajouter des extensions via le [Dockerfile](docker/php/dockerfile)
+**Note:**  Vous pouvez, si vous le souhaitez, ajouter des extensions via le [Dockerfile](docker/php/dockerfile)
 
 ### Comment ça marche ?
 
