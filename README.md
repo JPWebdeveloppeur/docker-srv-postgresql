@@ -25,11 +25,9 @@ Outre l'image de base Apache PHP 7.4.16, il comprend également les modules suiv
 
 ### Comment ça marche ?
 
-* Pendant que vous développez votre application, vous utilisez `docker-compose` qui utilise la base `Dockerfile` et monte votre dossier local `/project` à l'intérieur se trouve votre application. 
+* Pendant que vous développez votre application, vous utilisez `docker-compose` qui utilise la base `Dockerfile` et monte votre application à la racine. 
 
-* Cela signifie que vous pouvez développer votre application sans redémarrer le conteneur. 
-
-* Le `docker-compose` démarre également une base de données postegre et le conteneur pgadmin pour une administration facile.
+* Le [docker-compose](docker-compose.yml) démarre également une base de données postegre et le conteneur pgadmin pour une administration facile.
   
 * Composer, NodeJs, npm, yarn, vim et zsh sont embarqué au sein du conteneur php. 
 
@@ -48,8 +46,9 @@ docker-compose up -d ou docker-compose up --build
 ```
    composer create-project symfony/website-skeleton:"^4.4" project
 ```
+➔ Si votre projet existe, suivre cette procédure [Procédure](README-procédure.md) pour la remise en route de votre application
 
-➔ Voici l'url pour l'application :
+➔ Url :
 
     ► Application Web : 
         * http://localhost:8741/
@@ -86,7 +85,8 @@ psql -U user name_db < chemin ou se trouve le backup
 - docker-compose.yml # Orchestrer vos conteneurs 
 ```
 
-# Memento Docker
+# Memento Docker 
 ➔ https://labo-tech.fr/base-de-connaissance/quelles-sont-les-commandes-de-base-de-docker/
 
 ➔ https://wiki.maxcorp.org/docker-les-commandes-utiles/
+
