@@ -38,9 +38,13 @@ Outre l'image de base Apache PHP 7.4.16, il comprend également les modules suiv
 ```
 docker-compose up -d ou docker-compose up --build
 ```
-➔ Pour accéder à votre conteneur, il faut lancer la commande suivante :
+➔ Pour accéder à votre conteneur apache /php , il faut lancer la commande suivante :
 ```
   docker exec -it docker_php_apache usr/bin/zsh
+```
+➔ Pour accéder à votre conteneur postgre , il faut lancer la commande suivante :
+```
+  docker exec -it db_docker psql --host=localhost --username=username --dbname=dbname
 ```
 ➔ Lancer l'installation de symfony : 
 ```
