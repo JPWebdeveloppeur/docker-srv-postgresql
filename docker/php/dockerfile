@@ -5,7 +5,7 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf \
     &&  apt-get update \
     &&  apt-get install -y --no-install-recommends \
         locales apt-utils git libicu-dev g++ libpng-dev libxml2-dev libzip-dev libonig-dev libxslt-dev libpq-dev \
-        unixodbc unixodbc-dev tdsodbc postgresql postgresql-contrib unzip nodejs npm yarn vim zsh \
+        unixodbc unixodbc-dev tdsodbc postgresql postgresql-contrib unzip nodejs npm vim zsh \
 \
     &&  curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh \
     &&  echo "en_US.UTF-8 UTF-8" > /etc/locale.gen  \
@@ -14,7 +14,7 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf \
 \
     &&  curl -sS https://getcomposer.org/installer | php -- \
     &&  mv composer.phar /usr/local/bin/composer \
-
+    &&  npm install --global yarn
 \
     &&  curl -sS https://get.symfony.com/cli/installer | bash \
     &&  mv /root/.symfony/bin/symfony /usr/local/bin \
@@ -26,4 +26,4 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf \
 \
     &&  pecl install apcu && docker-php-ext-enable apcu
 
-WORKDIR /
+WORKDIR /var/www
