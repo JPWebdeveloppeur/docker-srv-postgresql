@@ -14,7 +14,7 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf \
 \
     &&  curl -sS https://getcomposer.org/installer | php -- \
     &&  mv composer.phar /usr/local/bin/composer \
-    &&  npm install --global yarn
+    &&  npm install --global yarn \
 \
     &&  curl -sS https://get.symfony.com/cli/installer | bash \
     &&  mv /root/.symfony/bin/symfony /usr/local/bin \
