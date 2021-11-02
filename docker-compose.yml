@@ -2,12 +2,12 @@ version: '3.8'
 services:
     psql:
         image: postgres
-        container_name: db_docker
+        container_name: db_docker_srvp
         restart: always
         volumes:
             - ./docker/db:/var/lib/psql
         environment:
-            POSTGRES_DB: docker_db_test
+            POSTGRES_DB: docker_srvp_db
             POSTGRES_USER: docker_db
             POSTGRES_PASSWORD: docker_db
         networks:
@@ -15,21 +15,21 @@ services:
 
     pgadmin4:
         image: dpage/pgadmin4
-        container_name: docker_pgadmin
+        container_name: docker_srvp_pgadmin
         environment:
           PGADMIN_DEFAULT_PASSWORD: root
           PGADMIN_DEFAULT_EMAIL: jpwebdeveloppeur@gmail.com
         ports:
-            - 8080:80
+            - 8741:80
         links:
             - psql
         networks:
             - dev
     php:
         build: docker/php
-        container_name: docker_php_apache
+        container_name: docker_srvp_apache_php
         ports:
-            - "8741:80"
+            - "8080:80"
         volumes:
           - ./docker/php/vhosts:/etc/apache2/sites-enabled
           - ./:/var/www

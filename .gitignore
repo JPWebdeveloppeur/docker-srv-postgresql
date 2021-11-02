@@ -1,4 +1,5 @@
 # Dev files
 .idea/*
 docker/php/php.ini
+index.php
 
