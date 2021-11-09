@@ -3,7 +3,7 @@ services:
     psql:
         image: postgres
         container_name: db_docker_srvp
-        restart: always
+        restart: 'no'
         volumes:
             - ./docker/db:/var/lib/psql
         environment:
@@ -33,7 +33,7 @@ services:
         volumes:
           - ./docker/php/vhosts:/etc/apache2/sites-enabled
           - ./:/var/www
-        restart: always
+        restart: 'no'
         networks:
           - dev
 

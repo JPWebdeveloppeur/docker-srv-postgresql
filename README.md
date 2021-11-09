@@ -1,4 +1,4 @@
-# Docker environnement Php 7.4.25-apache for Symfony 4.4
+# Docker environnement Php 7.4.25-apache
 
 Il s'agit d'une image Docker qui vous permet d'avoir un environnement de développement local ( Php 7.4.25, Apache 2.4.38, PostgreSql 11.11, Pgadmin 4).
 
@@ -38,11 +38,11 @@ Outre l'image de base Apache PHP 7.4.25, il comprend également les modules suiv
 ```
 docker-compose up -d ou docker-compose up --build
 ```
-➔ Pour accéder à votre conteneur apache /php , il faut lancer la commande suivante :
+➔ Pour accéder à votre conteneur apache /php, il faut lancer la commande suivante :
 ```
   docker exec -it docker_php_apache usr/bin/zsh
 ```
-➔ Pour accéder à votre conteneur postgre , il faut lancer la commande suivante :
+➔ Pour accéder à votre conteneur postgre, il faut lancer la commande suivante :
 ```
   docker exec -it db_docker psql --host=localhost --username=username --dbname=dbname
 ```
