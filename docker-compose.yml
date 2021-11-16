@@ -18,7 +18,7 @@ services:
         container_name: docker_srvp_pgadmin
         environment:
           PGADMIN_DEFAULT_PASSWORD: root
-          PGADMIN_DEFAULT_EMAIL: jpwebdeveloppeur@gmail.com
+          PGADMIN_DEFAULT_EMAIL: votre_email
         ports:
             - 8741:80
         links:
